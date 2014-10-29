@@ -7,9 +7,9 @@ It provides a class to resample images with many types of filters (such as Cautm
 
 It is public domain like the original code (unlicense.org).
 
-*dist* contains compiled js using emscripten, and also minified js using the closure-compiler.
+**dist** contains compiled js using emscripten, and also minified js using the closure-compiler.
 
-*example* contains a usage example in an html.
+**example** contains a usage example in an html.
 
 In order to compile it yourself, you must have the following installed and in your PATH :
 * emscripten
