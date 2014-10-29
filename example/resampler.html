@@ -1,0 +1,23 @@
+<head>
+    <script src="resampler.min.js"></script>
+</head>
+<body>
+    <canvas id="srcCanvas" width="1000" height="1000">
+    </canvas>
+    <canvas id="dstCanvas" width="200" height="200">
+    </canvas>
+    <script type="text/javascript">
+	window.onload = function() {
+		var canvas = document.getElementById('srcCanvas');
+		var ctx = canvas.getContext('2d');
+		var image = new Image();
+		image.onload = function() {
+			ctx.drawImage(this, 0, 0);
+			Resampler.resampleCanvas(canvas, document.getElementById('dstCanvas'), "lanczos4");
+		};
+
+		image.src = 'image.jpg';
+	}
+    </script>
+</body>
+        
