@@ -9,7 +9,7 @@ It is public domain like the original code (unlicense.org).
 
 dist contains compiled js using emscripten, and also minified js using the closure-compiler.
 
-In order to compile it yourself, you must have the following installed and in your PATH:
+In order to compile it yourself, you must have the following installed and in your PATH :
 * emscripten
 * closure-compiler
 * p7zip-full
